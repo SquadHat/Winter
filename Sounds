@@ -10,6 +10,7 @@ local Window = Library.CreateLib("Sounds", "Serpent")
 
 local Songs = Window:NewTab("Holdout")
 local Theme = Window:NewTab("Theme")
+local Settings = Window:NewTab("Settings")
 
 -- Holdout --
 
@@ -144,4 +145,12 @@ Text = "Playing - Unused Theme";
 Icon = "rbxassetid://6833114846";
 Duration = 4;
 })
+end)
+
+-- Settings --
+
+local Set = Settings:NewSection("Settings")
+
+Set:NewKeybind("UI", "UI Keybind", Enum.KeyCode.RightShift, function()
+	Library:ToggleUI()
 end)

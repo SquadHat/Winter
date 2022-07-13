@@ -1,0 +1,147 @@
+if game.PlaceId == 7551121821 then
+    return
+end
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Sounds", "Serpent")
+
+-- Tabs --
+
+local Songs = Window:NewTab("Holdout")
+local Theme = Window:NewTab("Theme")
+
+-- Holdout --
+
+local Holdpot = Songs:NewSection("Boss Themes")
+
+Holdpot:NewButton("Medieval", "Knights Theme", function()
+local Play = game:GetService("Workspace").ServerStuff.playAudio
+Play:FireServer({"songs", "holdout_bosses"}, "medieval", workspace)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Boss Themes";
+Text = "Playing - Knights Theme";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Holdpot:NewButton("Zealot", "Zealot Theme", function()
+local Play = game:GetService("Workspace").ServerStuff.playAudio
+Play:FireServer({"songs", "holdout_bosses"}, "zealot", workspace)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Boss Themes";
+Text = "Playing - Zealot Theme";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+Holdpot:NewButton("Sickler", "Sickler Theme", function()
+local Play = game:GetService("Workspace").ServerStuff.playAudio
+Play:FireServer({"songs", "holdout_bosses"}, "sickler", workspace)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Boss Themes";
+Text = "Playing - Sickler Theme";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+Holdpot:NewButton("Sledge", "Sledge Queen Theme", function()
+local Play = game:GetService("Workspace").ServerStuff.playAudio
+Play:FireServer({"songs", "holdout_bosses"}, "sledge", workspace)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Boss Themes";
+Text = "Playing - Sledge Theme";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+Holdpot:NewButton("Yosef", "Yosef Theme", function()
+local Play = game:GetService("Workspace").ServerStuff.playAudio
+Play:FireServer({"songs", "holdout_bosses"}, "yosef", workspace)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Boss Themes";
+Text = "Playing - Yosef Theme";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+Holdpot:NewButton("Rhyer", "Rhyer Theme", function()
+local Play = game:GetService("Workspace").ServerStuff.playAudio
+Play:FireServer({"songs", "holdout_bosses"}, "rhyer", workspace)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Boss Themes";
+Text = "Playing - Rhyer Theme";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+Holdpot:NewButton("Bad", "Bad Business Theme", function()
+local Play = game:GetService("Workspace").ServerStuff.playAudio
+Play:FireServer({"songs", "holdout_bosses"}, "bad", workspace)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Boss Themes";
+Text = "Playing - Bad Theme";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+-- Theme --
+
+local Theme = Theme:NewSection("Theme")
+
+Theme:NewButton("Scavfinal", "ScavFinal Theme", function()
+local Play = game:GetService("Workspace").ServerStuff.playAudio
+Play:FireServer({"songs"}, "scavfinal", workspace)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Theme";
+Text = "Playing - Scavfinal Theme";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Theme:NewButton("Scavwars", "Scavwars Theme", function()
+local Play = game:GetService("Workspace").ServerStuff.playAudio
+Play:FireServer({"songs"}, "scavwar", workspace)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Theme";
+Text = "Playing - Scavwars Theme";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Theme:NewButton("Final", "This shit Dope", function()
+local Play = game:GetService("Workspace").ServerStuff.playAudio
+Play:FireServer({"songs"}, "final", workspace)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Theme";
+Text = "Playing - Final Theme";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Theme:NewButton("End Credits", "Ending Credits Theme", function()
+local Play = game:GetService("Workspace").ServerStuff.playAudio
+Play:FireServer({"songs"}, "unused2", workspace)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Theme";
+Text = "Playing - End Theme";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Theme:NewButton("Unused", "Unused Theme", function()
+local Play = game:GetService("Workspace").ServerStuff.playAudio
+Play:FireServer({"songs"}, "unused1", workspace)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Theme";
+Text = "Playing - Unused Theme";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)

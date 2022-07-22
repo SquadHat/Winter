@@ -1,0 +1,458 @@
+if game.PlaceId ~= 7551121821 and game.PlaceId ~= 9880062154 then
+    return
+end
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Title", "DarkTheme")
+
+-- Tabs --
+
+local Main = Window:NewTab("Main")
+local Common = Window:NewTab("Common")
+local PerkTitles = Window:NewTab("Perk Titles")
+
+-- Local --
+
+local change = workspace.ServerStuff.changeStats
+
+-- Main --
+
+local Main = Main:NewSection("General Titles")
+
+Main:NewButton("Rank + Perk", "None", function()
+change:InvokeServer("changetitle", "defaultclass")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Rank&Perk";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Main:NewButton("Rank", "None", function()
+change:InvokeServer("changetitle", "default")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Rank";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Main:NewButton("Tier + Perk", "None", function()
+change:InvokeServer("changetitle", "prestigetier")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Tier&Perk";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Main:NewButton("Honoured Agent", "None", function()
+change:InvokeServer("changetitle", "agentduty")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Honoured Agent";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Main:NewButton("Veteran of Duty", "None", function()
+change:InvokeServer("changetitle", "agentvet")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Veteran of Duty";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+-- Titles --
+
+local Title = Common:NewSection("Common Titles")
+
+Title:NewButton("Athlete", "Navigator Challenge", function()
+change:InvokeServer("changetitle", "mantler")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Athlete";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Fisting Artist", "Master Fister Challenge", function()
+change:InvokeServer("changetitle", "fisthits")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Fisting Artist";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Fool", "In-Adequate Challenge", function()
+change:InvokeServer("changetitle", "lowdamage")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Fool";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Juggernaut", "Tanker Challenge", function()
+change:InvokeServer("changetitle", "tankdamage")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Juggernaut";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Scavenger", "Supply Gatherer Challenge", function()
+change:InvokeServer("changetitle", "locker")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Scavenger";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Hunter", "Wild Hunter Challenge", function()
+change:InvokeServer("changetitle", "hunter")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Hunter";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Skull Cracker", "Smasher", function()
+change:InvokeServer("changetitle", "bludgeonhits")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Skull Cracker";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Marksman", "Clean Shots Challenge", function()
+change:InvokeServer("changetitle", "headshots")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Marksman";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Seeker", "The Sickler Challenge", function()
+change:InvokeServer("changetitle", "shadowunlock")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Seeker";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Predator", "Unseen Shadow Challenge", function()
+change:InvokeServer("changetitle", "driftunlock")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Predator";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Dasher", "Fine Line Challenge", function()
+change:InvokeServer("changetitle", "wireunlock")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Dasher";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Bladesmith", "Blademaster Challenge", function()
+change:InvokeServer("changetitle", "bladehits")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Bladesmith";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Trapsetter", "Trapper Challenge", function()
+change:InvokeServer("changetitle", "trap")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Trapsetter";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Healthy", "Healthy Feast Challenge", function()
+change:InvokeServer("changetitle", "feaster")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Healthy";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Slayer", "Armed and Dangerous Challenge", function()
+change:InvokeServer("changetitle", "gundamage")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Slayer";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Butcher", "Tooth and Nail Challenge", function()
+change:InvokeServer("changetitle", "meleedamage")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Butcher";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Axe Maniac", "Chopper Challenge", function()
+change:InvokeServer("changetitle", "axehits")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Axe Maniac";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Phalanx", "Impaler Challenge", function()
+change:InvokeServer("changetitle", "meleedamage")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Phalanx";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+Title:NewButton("Pincushion", "Durable Challenge", function()
+change:InvokeServer("changetitle", "pincush")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Pincushion";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+-- Perk Titles --
+
+local PT = PerkTitles:NewSection("Class Titles")
+
+PT:NewButton("Survivalist", "None", function()
+change:InvokeServer("changetitle", "survival")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Survivalist";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Berserker", "None", function()
+change:InvokeServer("changetitle", "berz")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to ";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Artillerist", "None", function()
+change:InvokeServer("changetitle", "revolver")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Artillerist";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Prophet", "None", function()
+change:InvokeServer("changetitle", "scan")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Prophet";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Vagabond", "None", function()
+change:InvokeServer("changetitle", "sword")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Vagabond";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Zealot", "None", function()
+change:InvokeServer("changetitle", "shield")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Zealot";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Tickspider", "None", function()
+change:InvokeServer("changetitle", "trapper")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Tickspider";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Lazarus", "None", function()
+change:InvokeServer("changetitle", "lazarus")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Lazarus";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Arbiter", "None", function()
+change:InvokeServer("changetitle", "shotgun")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Arbiter";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Damned", "None", function()
+change:InvokeServer("changetitle", "damn")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Damned";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Blitzer", "None", function()
+change:InvokeServer("changetitle", "ranger")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Blitzer";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Mindflayer", "None", function()
+change:InvokeServer("changetitle", "mind")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Mindflayer";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Executioner", "None", function()
+change:InvokeServer("changetitle", "goggles")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Executioner";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Hivemind", "None", function()
+change:InvokeServer("changetitle", "hive")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Hivemind";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Immolator", "None", function()
+change:InvokeServer("changetitle", "fire")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Pyro";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Sovereign", "None", function()
+change:InvokeServer("changetitle", "dagger")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Sovereign";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Apostle", "None", function()
+change:InvokeServer("changetitle", "apostle")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Apostle";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Crosslink", "None", function()
+change:InvokeServer("changetitle", "wire")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Crosslink";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Drifter", "None", function()
+change:InvokeServer("changetitle", "drift")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Apostle";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)

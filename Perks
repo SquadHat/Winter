@@ -1,1 +1,50 @@
+if game.PlaceId ~= 7551121821 and game.PlaceId ~= 9880062154 then
+    return
+end
 
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Perks", "DarkTheme")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Loaded";
+Text = "Press Settings Button After Switched Perks";
+Icon = "rbxassetid://6833114846";
+Duration = 7;
+})
+
+-- Tabs --
+
+local Main = Window:NewTab("General")
+
+-- Perks --
+
+local Perks = Main:NewSection("Perks")
+Perks:NewLabel("Switch To 3 New Class Without Unlocking")
+local A_1 = workspace.ServerStuff.changeStats
+
+Perks:NewButton("Apostle", "Reikgon Perk", function()
+A_1:InvokeServer("changeclass", "shadow")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Switched to Apostle";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+Perks:NewButton("Drifter", "Drift Perk", function()
+A_1:InvokeServer("changeclass", "drift")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Switched to Drifter";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+Perks:NewButton("Crosslink", "Sakuya Perk", function()
+A_1:InvokeServer("changeclass", "wire")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Switched to Crosslink";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)

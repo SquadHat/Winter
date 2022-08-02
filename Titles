@@ -281,7 +281,17 @@ PT:NewButton("Berserker", "None", function()
 change:InvokeServer("changetitle", "berz")
 game.StarterGui:SetCore("SendNotification", {
 Title = "Successfully";
-Text = "Changed to ";
+Text = "Changed to Berserker";
+Icon = "rbxassetid://6833114846";
+Duration = 4;
+})
+end)
+
+PT:NewButton("Riskrunner", "None", function()
+change:InvokeServer("changetitle", "gunner")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Successfully";
+Text = "Changed to Riskrunner";
 Icon = "rbxassetid://6833114846";
 Duration = 4;
 })
@@ -451,7 +461,7 @@ PT:NewButton("Drifter", "None", function()
 change:InvokeServer("changetitle", "drift")
 game.StarterGui:SetCore("SendNotification", {
 Title = "Successfully";
-Text = "Changed to Apostle";
+Text = "Changed to Drifter";
 Icon = "rbxassetid://6833114846";
 Duration = 4;
 })

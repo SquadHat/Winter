@@ -1,3 +1,5 @@
+-- Original Thread (https://v3rmillion.net/showthread.php?tid=1140966)
+
 if game.PlaceId ~= 7551121821 and game.PlaceId ~= 9880062154 then
     return
 end

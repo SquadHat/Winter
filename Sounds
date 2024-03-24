@@ -1,4 +1,4 @@
-if game.PlaceId ~= 7551121821 and game.PlaceId ~= 9880062154 then
+if game.PlaceId ~= 13438553315 then
     return
 end
 
